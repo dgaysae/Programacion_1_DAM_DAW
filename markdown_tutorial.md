@@ -409,7 +409,6 @@ System.out.printf(
 );
 ```
 
-
 ## Listas de definiciones
 
 Las listas de definiciones forman parte de la **sintaxis extendida** de markdown.
@@ -452,6 +451,18 @@ gato, ta
 : m. y f. coloq. Persona nacida en Madrid.
 : m. y f. C. Rica y Nic. Persona que tiene los ojos verdes o azules. U. t. c. adj.
 
+## Caracteres de escape
+
+Ya hemos visto caracteres que sirven como *comando* para indicar al documento que determinado texto debe tener un formato comportarse de determinada manera.
+
+Si queremos mostrar alguno de esos caracteres, tenemos que hacer que escapen de esa función. Para ello usamos la barra invertida (\) delante de dicho carácter. Veamos algunos ejemplos:
+
+
+Con la barra podemos mostrar la comilla simple: \`
+
+O los asteríscos: \*esto no está formateado\*
+
+En [esta tabla](https://www.markdownguide.org/basic-syntax/#characters-you-can-escape) puedes ver los caracteres que puedes escapar.
 
 # Anexo I
 
