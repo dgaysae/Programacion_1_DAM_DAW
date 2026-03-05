@@ -6,6 +6,7 @@ package unidad01;
  * <br/>
  * Veamos algunos de esos ejemplos. Para ello usaremos el modificador final, que
  * convierte una variable en constante (su valor no se puede modificar).
+ *
  * @author dgs
  */
 public class OperacionesComplejas {
