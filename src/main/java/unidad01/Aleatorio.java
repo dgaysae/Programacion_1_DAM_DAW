@@ -6,8 +6,12 @@ import java.util.Scanner;
  * Cómo calcular un valor aleatorio usando las funcionalidades que ofrece la clase Math.
  * <br/>
  * <ol>
- *     <li></li>
+ *     <li>Desde el 0 (incluido) hasta max (EXCLUIDO)</li>
+ *     <li>Desde el 0 (incluido) hasta max (INCLUIDO)</li>
+ *     <li>Desde un valor mínimo (incluido) hasta otro máximo (INCLUIDO)</li>
  * </ol>
+ *
+ * @author dgs
  */
 public class Aleatorio {
 
