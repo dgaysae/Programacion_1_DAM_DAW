@@ -1,4 +1,4 @@
-package unidad06.clasesanonimas;
+package unidad06.clasesanonimas.ejemplo01;
 
 import javax.swing.*;
 

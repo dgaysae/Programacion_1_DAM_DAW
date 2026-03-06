@@ -1,6 +1,4 @@
-package unidad06.clasesanonimas;
-
-import java.util.Arrays;
+package unidad06.clasesanonimas.ejemplo01;
 
 public class Persona {
     String nombre;
