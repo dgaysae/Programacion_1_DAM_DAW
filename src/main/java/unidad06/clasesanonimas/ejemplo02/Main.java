@@ -11,20 +11,31 @@ public class Main {
     public static void main(String[] args) {
         Calculadora sumar = new Calculadora() {
             @Override
-            public double operar(double num1, double num2) {
-                return num1 + num2;
+            public double operar(double... numeros) {
+                double suma = 0.0;
+                for(double numero : numeros) {
+                    suma += numero;
+                }
+                return suma;
             }
         };
 
         Calculadora restar = new Calculadora() {
             @Override
-            public double operar(double num1, double num2) {
-                return num1 - num2;
+            public double operar(double... numeros) {
+                if (numeros.length == 0) {
+                    return 0.0;
+                }
+                double resta = numeros[0];
+                for (int i = 1; i < numeros.length; i++) {
+                    resta -= numeros[i];
+                }
+                return resta;
             }
         };
 
-        double suma = sumar.operar(34, 67);
-        double resta = restar.operar(34, 67);
+        double suma = sumar.operar(34, 11, 22);
+        double resta = restar.operar(34, 11, 2);
 
         System.out.println("Suma: " + suma);
         System.out.println("Resta: " + resta);
