@@ -8,6 +8,8 @@ import javax.swing.JFrame;
 
 /**
  *
+ * @see PanelFlow
+ * @see PanelVertical
  * @author diego
  */
 public class VentanaBoxLayout extends JFrame {
