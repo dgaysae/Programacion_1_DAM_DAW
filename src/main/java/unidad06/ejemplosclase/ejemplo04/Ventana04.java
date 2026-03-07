@@ -12,9 +12,18 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import unidad06.ejemplosclase.Persona;
-import unidad06.ejemplosclase.model.DataProvider;
+import unidad06.ejemplosclase.ejemplo04.model.DataProvider;
 
 /**
+ * <p>
+ *     Y llegamos a nuestra primera tabla de datos. En nuestro caso vamos a ver tres componentes para crear nuestras tablas:
+ * </p>
+ * <ul>
+ *     <li>DefaultTableModel: un modelo a través del cual tocamos los datos de la tabla</li>
+ *     <li>JTable: la tabla en si</li>
+ *     <li>JScrollPane: un panel que mostrará automáticamente un scroll si detecta que los registros de la tabla son
+ *     más de los que se muestran en el panel.</li>
+ * </ul>
  *
  * @author diego
  */

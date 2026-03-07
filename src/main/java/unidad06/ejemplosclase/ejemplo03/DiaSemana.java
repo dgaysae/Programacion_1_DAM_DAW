@@ -1,4 +1,4 @@
-package unidad06.ejemplosclase;
+package unidad06.ejemplosclase.ejemplo03;
 
 /**
  *

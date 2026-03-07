@@ -1,7 +1,5 @@
 package unidad06.ejemplosclase.ejemplo03;
 
-import unidad06.ejemplosclase.DiaSemana;
-
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,7 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JRadioButton;
 
 /**
- * 
+ * En este ejemplo creamos un combo box a partir del enum {@link DiaSemana}
  * @author diego
  */
 public class Ventana03 extends JFrame {
