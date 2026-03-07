@@ -12,7 +12,7 @@ import java.awt.*;
  */
 public class Main02 {
     public static void main(String[] args) {
-        JFrame ventana = new JFrame("Ventana con componentes");
+        JFrame ventana = new JFrame("Ventana1 con componentes");
         ventana.setBounds(100, 100, 400, 400);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setLayout(new FlowLayout());

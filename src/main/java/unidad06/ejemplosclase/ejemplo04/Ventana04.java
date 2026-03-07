@@ -59,7 +59,7 @@ public class Ventana04 extends JFrame {
     }
 
     private void initWindow() {
-        setTitle("Ventana con tabla");
+        setTitle("Ventana1 con tabla");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(300, 200);
     }

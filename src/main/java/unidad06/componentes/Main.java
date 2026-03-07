@@ -10,8 +10,8 @@ public class Main {
     public static void main(String[] args) {
         
         JFrame ventana = new JFrame("Mi primera ventana");
-        JFrame ventana1 = new JFrame("Ventana 1");
-        JFrame ventana2 = new JFrame("Ventana 2");
+        JFrame ventana1 = new JFrame("Ventana1 1");
+        JFrame ventana2 = new JFrame("Ventana1 2");
         
         ventana.setBounds(100, 100, 400, 400);
         ventana1.setBounds(100, 100, 400, 400);

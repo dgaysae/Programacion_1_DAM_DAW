@@ -15,7 +15,7 @@ import javax.swing.JTextField;
 public class Ventana01 {
     public static void main(String[] args) {
         JFrame ventana1 = new JFrame();
-        ventana1.setTitle("Ventana 1");
+        ventana1.setTitle("Ventana1 1");
 
         /*
         Cuando se cierra la ventana, la aplicación finaliza y desocupa

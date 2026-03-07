@@ -13,7 +13,7 @@ import javax.swing.JLabel;
  */
 public class Main01 {
     public static void main(String[] args) {
-        JFrame ventana = new JFrame("Ventana de BorderLayout");
+        JFrame ventana = new JFrame("Ventana1 de BorderLayout");
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         ventana.setBounds(10, 10, 400, 400);
 

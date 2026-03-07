@@ -11,7 +11,7 @@ public class Controller {
     // Faltaría un objeto como Modelo para los datos
     
     public Controller() {
-        ventana = new Ventana("Ventana MVC");
+        ventana = new Ventana("Ventana1 MVC");
         ventana.getEtiqueta().setText("Controller rules!");
         ventana.setVisible(true);
     }
