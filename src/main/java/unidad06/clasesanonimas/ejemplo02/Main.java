@@ -9,6 +9,11 @@ package unidad06.clasesanonimas.ejemplo02;
  */
 public class Main {
     public static void main(String[] args) {
+        /*
+        Instanciamos un objeto sumar con una clase anónima (no existe).
+        Al indicar "new Calculadora()" realmente estamos diciendo que el objeto
+        implementa la interfaz Calculadora.
+         */
         Calculadora sumar = new Calculadora() {
             @Override
             public double operar(double... numeros) {
