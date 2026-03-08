@@ -14,7 +14,7 @@ package unidad05.cadenas;
  * </p>
  * @author diego
  */
-public class Main00 {
+public class Ejemplo01 {
     public static void main(String[] args) {
         /*
         String es inmutable. La concatenación es, en realidad, la creación de otra cadena, desreferenciando la

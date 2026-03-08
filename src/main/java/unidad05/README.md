@@ -1,7 +1,7 @@
 # Unidad 5: Estructuras de Almacenamiento
 Este módulo se centra en el manejo de colecciones de datos del mismo tipo bajo un solo nombre, permitiendo gestionar grandes volúmenes de información de manera eficiente.
 
-## 1. Arrays Unidimensionales (Vectores)
+## Arrays Unidimensionales (Vectores)
 Un array es una estructura de datos que contiene una colección finita de elementos del mismo tipo.
 
 Declaración e Inicialización: En Java se define el tipo seguido de corchetes.
@@ -15,7 +15,7 @@ int[] valores = {10, 20, 30}; // Inicialización directa.
 
 Propiedad `.length`: devuelve el número total de elementos del array.
 
-## 2. Operaciones con Arrays
+## Operaciones con Arrays
 Para recorrer arrays se utilizan bucles `for` tradicionales o el bucle `for-each` para lectura.
 
 **Ordenación**
@@ -29,7 +29,7 @@ De entre otros métodos, los más conocidos son:
 * Búsqueda **secuencial**: recorre uno a uno todos los elementos del array (para arrays desordenados). 
 * Búsqueda **binaria**: es mucho más rápida que la secuencial, pero **requiere que el array esté previamente ordenado.**
 
-## 3. Arrays Multidimensionales (Matrices)
+## Arrays Multidimensionales (Matrices)
 Son "arrays de arrays". La forma más común es la **bidimensional** (filas y columnas). Se llama así porque requiere de dos dimensiones para localizar cualquier elemento en la matriz.
 
 > Por ese motivo los arrays o vectores son de una sóla dimensión: sólo necesitan un índice para localizar cualquier elemento. 
@@ -40,14 +40,18 @@ La declaración de una matriz es similar a la del array, pero añadiendo tantos 
 int[][] matriz = new int[filas][columnas];
 ```
 
-Para acceder a cualquier elemento en la matriz hay que usar dos índices, por ejemplo `matriz[0][1]` para acceder a la primera fila, segunda columna.
+Para acceder a cualquier elemento en la matriz hay que usar dos índices, por ejemplo
+`matriz[0][1]` para acceder a la primera fila, segunda columna.
 
-Podemos recorrer todos los elementos de la matriz mediante **bucles anidados** (un `for` dentro de otro).
+Podemos recorrer todos los elementos de la matriz mediante **bucles anidados** (un `for`
+dentro de otro).
 
-## 4. Cadenas de Caracteres (Strings)
+## Cadenas de Caracteres (Strings)
 En Java, los `Strings` no son tipos primitivos, sino **objetos**.
 
-Se dice que son **inmutables**. Esto significa que, una vez creado un objeto `String`, **su contenido no puede cambiar**. Cuando cambiamos el texto de un `String` realmente se crea un nuevo objeto en memoria.
+Se dice que son **inmutables**. Esto significa que, una vez creado un objeto `String`,
+**su contenido no puede cambiar**. Cuando cambiamos el texto de un `String` realmente se
+crea un nuevo objeto en memoria.
 
 Los métodos clave son:
 
@@ -65,17 +69,27 @@ Los métodos clave son:
 ### StringBuffer / StringBuilder
 Clases alternativas a `String` que almacen texto **mutable**. Se usan cuando necesitamos modificar cadenas frecuentemente sin penalizar el rendimiento.
 
-## 5. Arrays como Parámetros
+> Puedes ver ejemplos de clase [aquí](./cadenas).
+
+## Expresiones regulares (regexp)
+Encontrar un patrón en un texto es complicado con las funcionalidades básicas que nos ofrece `String`.
+Pero usando expresiones regulares podemos encontrar ocurrencias de un patrón concreto en cualquier texto de forma rápida y eficiente.
+
+Para ello podemos usar el método `String.matches(expresión regular)` o las clases `Pattern` y `Matcher`.
+
+> Puedes ver ejemplos de clase [aquí](./expresionesRegulares).
+
+## Arrays como Parámetros
 Los arrays son objetos. Por tanto, cuando se pasan a los métodos lo que se pasa realmente es su referencia a memoria. Esto significa que si el método modifica el contenido del array, los cambios se mantienen fuera del método.
 
 **Funciones variádicas**
 
 Permiten que un método reciba un número indeterminado de argumentos usando la sintaxis `tipo... nombre`.
 
-## 6. Estructuras Dinámicas (Colecciones)
+## Estructuras Dinámicas (Colecciones)
 A diferencia de los arrays, estas estructuras pueden cambiar su tamaño en memoria durante la ejecución del programa. En Java, se encuentran principalmente en el paquete `java.util`.
 
-### 6.1. Listas (interfaz `List`)
+### Listas (interfaz `List`)
 Las listas son objetos que implementan la interfaz `List`: `ArrayList`, `LinkedList`, etc.
 
 La estructura dinámica más utilizada es el `ArrayList`. **Internamente usa un array** que se redimensiona automáticamente.
@@ -99,7 +113,7 @@ Métodos principales:
 | `size()` | Devuelve el número de elementos |
 
 
-### 6.2. Conjuntos (interfaz `Set`)
+### Conjuntos (interfaz `Set`)
 Colecciones que **no permiten elementos duplicados**. Existen varias estructuras que implementan `Set`: `HashSet`, `LinkedHashSet` o `TreeSet`, entre otras.
 
 Se usan para **evitar duplicados de una lista**.
@@ -117,7 +131,7 @@ Se usan para **evitar duplicados de una lista**.
 > ya que los usará para comparar el objeto a insertar con cada uno de los que contiene. 
 
 
-### 6.3. Mapas (interfaz `Map`)
+### Mapas (interfaz `Map`)
 Estructuras que almacenan parejas de **Clave - Valor**. Las más conocidas son: `HashMap`, `LinkedHashMap` y `TreeMap`.
 
 Cada clave es única y se utiliza para recuperar su valor asociado de forma casi instantánea.
@@ -131,12 +145,12 @@ edades.put("Juan", 20);
 System.out.println(edades.get("Juan")); // Imprime 20
 ```
 
-## 7. Tipos Genéricos (<T>)
+## Tipos Genéricos (<T>)
 Las colecciones de Java utilizan **genéricos**. Esto permite especificar qué tipo de objetos va a guardar la colección, lo que evita errores de ejecución y la necesidad de hacer _castings_ manuales.
 
 > Así, por ejemplo, `ArrayList<Integer>` garantiza que solo se guarden números enteros.
 
-## 8. Diferencias: Estáticas vs. Dinámicas
+## Diferencias: Estáticas vs. Dinámicas
 
 | Característica | Arrays (Estáticas)                                                                   | Colecciones (Dinámicas)                              |
 |----------------|--------------------------------------------------------------------------------------|------------------------------------------------------|
