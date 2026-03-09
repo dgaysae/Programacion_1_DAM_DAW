@@ -1,24 +1,24 @@
 package unidad08.ejemplos.clasePrintWriter;
 
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.io.PrintWriter;
 
 /**
- * PrintWrite es otra subclase de la abstracta Writer y que ofrece más
+ * PrintWrite es otra subclase de la abstracta Writer que ofrece más
  * versatilidad que FileWriter.
  *
  * @author diego
  */
-public class ejemplo01 {
+public class Ejemplo01 {
 
     public static void main(String args[]) {
         String nombreFichero = ".\\ficheros\\prueba.txt";
         String texto = "Hola, caracola! Este texto se ha insertado desde el programa usando PrintWriter.";
 
         try {
-//            PrintWriter escribirEnFichero = new PrintWriter(new FileWriter(nombreFichero, true));   // así no se machaca, se añade.
             PrintWriter escribirEnFichero = new PrintWriter(nombreFichero); // este método machaca el fichero
-            
+
             escribirEnFichero.print("Este texto está ");
             escribirEnFichero.print("en la misma línea.");
             escribirEnFichero.println(texto);
