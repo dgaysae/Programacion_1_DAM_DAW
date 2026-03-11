@@ -11,6 +11,9 @@ import javax.swing.*;
  *     <li>Necesitamos sobrescribir el comportamiento de una clase existente para un solo uso.</li>
  *     <li>Queremos implementar una interfaz rápidamente sin crear un archivo .java</li>
  * </ul>
+ * En otras palabras, cuando instancias un objeto a partir de una clase anónima, el objeto no tiene ni propiedades
+ * para definir su estado ni métodos para establecer su comportamiento. Por tanto, este objeto debe adquirir un 
+ * comportamiento a partir de una interfaz. 
  *
  * @author diego
  */
