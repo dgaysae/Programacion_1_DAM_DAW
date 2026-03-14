@@ -1,4 +1,4 @@
-package unidad07.clasesAnonimas.ejemplo02;
+package unidad07.clasesAnonimas.paraInterfaces.ejemplo02;
 
 /**
  *

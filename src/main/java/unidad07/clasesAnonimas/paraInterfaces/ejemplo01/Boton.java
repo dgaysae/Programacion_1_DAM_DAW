@@ -1,4 +1,4 @@
-package unidad07.clasesAnonimas.ejemplo01;
+package unidad07.clasesAnonimas.paraInterfaces.ejemplo01;
 
 public class Boton {
     public void setEvento(EventoBoton evento) {

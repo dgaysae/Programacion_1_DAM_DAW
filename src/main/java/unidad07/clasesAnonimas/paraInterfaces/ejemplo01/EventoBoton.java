@@ -1,4 +1,4 @@
-package unidad07.clasesAnonimas.ejemplo01;
+package unidad07.clasesAnonimas.paraInterfaces.ejemplo01;
 
 public interface EventoBoton {
     public abstract void onClick();
