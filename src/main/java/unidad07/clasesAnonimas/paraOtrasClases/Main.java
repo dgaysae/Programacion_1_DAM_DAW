@@ -28,7 +28,8 @@ public class Main {
 
         Alumno ana = new Alumno("Ana", 9.4, 4.5) {
             /**
-             * Está aprobado si se ponderan el examen y las actividades.
+             * Sobreescribimos el método que indica si un estudiante está o no aprobado.
+             * Ahora aprueba si se ponderan el examen y las actividades.
              * @return
              */
             @Override
