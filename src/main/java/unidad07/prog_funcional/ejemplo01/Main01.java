@@ -16,11 +16,11 @@ import java.util.List;
  *     colecciones de elementos.
  * </p>
  * <p>
- *     En la siguiente clase {@link Main02} veremos cómo implementar estas mismas funcionalidades de otra forma...
+ *     En la siguiente clase {@link Main02Filter} veremos cómo implementar estas mismas funcionalidades de otra forma...
  * </p>
  * <p>
  *     <strong>Importante:</strong> una buena parte de los ejemplos se han tomado o inspirado del canal de
- *     <a href="https://youtube.com/playlist?list=PLK6RrRW5qdCMccvDnZb6-0d6uAIwbTQ1A&si=Yi_wXfzqJrU5zS3O">Pedro Joya</a>.
+ *     <strong><a href="https://youtube.com/playlist?list=PLK6RrRW5qdCMccvDnZb6-0d6uAIwbTQ1A&si=Yi_wXfzqJrU5zS3O">Pedro Joya</a></strong>.
  * </p>
  * @author diego
  */

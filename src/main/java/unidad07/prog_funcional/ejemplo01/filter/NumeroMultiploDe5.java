@@ -1,4 +1,4 @@
-package unidad07.prog_funcional.ejemplo01;
+package unidad07.prog_funcional.ejemplo01.filter;
 
 public class NumeroMultiploDe5 implements NumberFilter {
     @Override

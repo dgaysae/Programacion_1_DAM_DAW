@@ -1,5 +1,7 @@
 package unidad07.prog_funcional.ejemplo01;
 
+import unidad07.prog_funcional.ejemplo01.filter.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,8 +24,17 @@ import java.util.List;
  *     Para ello vamos a crear la interfaz {@link NumberFilter} e implementarla en {@link NumeroPar}, {@link NumeroImpar}
  *     y algunos múltiplos, de forma que cada una implemente su correspondiente filtro.
  * </p>
+ * <p>
+ *     Al hacer un único método de filtrado, <strong>evitamos la repetición de código</strong> y <strong>el método
+ *     permite elegir la funcionalidad</strong> (en este caso, el criterio de filtrado) a llevar a cabo.
+ * </p>
+ * <p>
+ *     <strong>Importante:</strong> una buena parte de los ejemplos se han tomado o inspirado del canal de
+ *     <strong><a href="https://youtu.be/wArA9GkkOnc?si=rAFxlJSXSzquUJ7D">Pedro Joya</a></strong>.
+ * </p>
+ * @author diego
  */
-public class Main02 {
+public class Main02Filter {
     public static void main(String[] args) {
         List<Integer> numeros = getLista();
         System.out.println(numeros);
