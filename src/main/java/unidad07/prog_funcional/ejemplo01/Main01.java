@@ -16,6 +16,7 @@ import java.util.List;
  *     colecciones de elementos.
  * </p>
  * <p>
+ *     Para verlo con detenimiento, se expicarán los conceptos de base por separado, cada uno en una clase distinta.<br/>
  *     En la siguiente clase {@link Main02Filter} veremos cómo implementar estas mismas funcionalidades de otra forma...
  * </p>
  * <p>
