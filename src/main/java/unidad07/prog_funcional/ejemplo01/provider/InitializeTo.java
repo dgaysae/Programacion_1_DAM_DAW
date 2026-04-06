@@ -1,8 +1,6 @@
 package unidad07.prog_funcional.ejemplo01.provider;
 
-import unidad07.prog_funcional.ejemplo01.mapping.Calculo;
-
-public class InitializeTo implements IntegerProvider {
+public class InitializeTo implements ElementProvider {
     private int initNumber;
 
     public InitializeTo(int initNumber) {

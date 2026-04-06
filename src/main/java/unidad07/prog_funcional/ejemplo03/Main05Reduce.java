@@ -1,7 +1,7 @@
-package unidad07.prog_funcional.ejemplo02;
+package unidad07.prog_funcional.ejemplo03;
 
-import unidad07.prog_funcional.ejemplo02.provider.ElementProvider;
-import unidad07.prog_funcional.ejemplo02.reduce.*;
+import unidad07.prog_funcional.ejemplo03.provider.ElementProvider;
+import unidad07.prog_funcional.ejemplo03.reduce.ReductorMonoTipo;
 
 import java.util.List;
 
@@ -31,12 +31,12 @@ import java.util.List;
 //        System.out.println("Suma sólo de impares: \n" + reduce(naturales, 0, new SumadorDeImpares()));
     }
 
-    public static Integer reduce(
-            List<Integer> numeros,
-            Integer init,
-            Reductor reductor) {
-        int reduccion = init;
-        for (Integer numero : numeros) {
+    public static <T> T reduce(
+            List<T> numeros,
+            T init,
+            ReductorMonoTipo<T> reductor) {
+        T reduccion = init;
+        for (T numero : numeros) {
             reduccion = reductor.reduce(reduccion, numero);
         }
         return reduccion;

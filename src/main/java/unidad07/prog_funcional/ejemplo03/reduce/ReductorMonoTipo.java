@@ -1,0 +1,11 @@
+package unidad07.prog_funcional.ejemplo03.reduce;
+
+import unidad07.prog_funcional.ejemplo03.reduce.Reductor;
+
+/**
+ * Esta es una especialización de {@link Reductor}, donde el tipo de dato será el mismo para los argumentos de entrada
+ * y para el retorno.
+ * @param <T>
+ */
+public interface ReductorMonoTipo<T> extends Reductor<T, T, T>{
+}

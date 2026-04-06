@@ -1,6 +1,6 @@
-package unidad07.prog_funcional.ejemplo02;
+package unidad07.prog_funcional.ejemplo03;
 
-import unidad07.prog_funcional.ejemplo02.provider.*;
+import unidad07.prog_funcional.ejemplo03.provider.ElementProvider;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,36 +8,41 @@ import java.util.Random;
 
 /**
  * <p>
- *     Pero no tenemos que parar en el filtrado. ¡También podemos "personalizar" otras tareas para un método!
+ * Pero no tenemos que parar en el filtrado. ¡También podemos "personalizar" otras tareas para un método!
  * </p>
  * <p>
- *     En este caso atacaremos el tema de <strong>crear</strong> esa lista de números. En {@link Main} hicimos un
- *     método <strong>getLista</strong> que hardcodeaba esa lista. Ahora podemos indicar qué tipo de números queremos
- *     en ella de la misma forma que hemos hecho en el caso del filtrado.
+ * En este caso atacaremos el tema de <strong>crear</strong> esa lista de números. En {@link Main} hicimos un
+ * método <strong>getLista</strong> que hardcodeaba esa lista. Ahora podemos indicar qué tipo de números queremos
+ * en ella de la misma forma que hemos hecho en el caso del filtrado.
  * </p>
  * <p>
- *     <strong>Importante:</strong> una buena parte de los ejemplos se han tomado o inspirado del canal de
- *     <strong><a href="https://youtu.be/syvhj0PWv_0?si=5LIvvlEs8AewoC8l">Pedro Joya</a></strong>.
+ * <strong>Importante:</strong> una buena parte de los ejemplos se han tomado o inspirado del canal de
+ * <strong><a href="https://youtu.be/syvhj0PWv_0?si=5LIvvlEs8AewoC8l">Pedro Joya</a></strong>.
  * </p>
+ *
  * @author diego
  */
 public class Main03Provider {
     public static void main(String[] args) {
-        List<Integer> naturales = getLista(20, new ElementProvider() {
-            private static int next = 0;
+        List<Integer> naturales = getLista(20, new ElementProvider<>() {
+            private static Integer next = 0;
+
             @Override
             public Integer get() {
                 return ++next;
             }
         });
-        List<Integer> multiplosDe3 = getLista(20, new ElementProvider() {
-            private static int next = 3;
+
+        List<Integer> multiplosDe3 = getLista(20, new ElementProvider<>() {
+            private static Integer next = 3;
+
             @Override
             public Integer get() {
                 return (next += 3) - 3;
             }
         });
-        List<Integer> aleatoriosMenoresDe100 = getLista(20, new ElementProvider() {
+
+        List<Integer> aleatoriosMenoresDe100 = getLista(20, new ElementProvider<>() {
             @Override
             public Integer get() {
                 return (new Random()).nextInt(101);
@@ -53,9 +58,9 @@ public class Main03Provider {
 //        System.out.println("Ceros: " + inicializarACero);
     }
 
-    public static List<Integer> getLista(int size, ElementProvider intProvider) {
-        List<Integer> numerosGenerados = new ArrayList<>();
-        for(int i = 0; i < size; i++) {
+    public static <T> List<T> getLista(int size, ElementProvider<T> intProvider) {
+        List<T> numerosGenerados = new ArrayList<>();
+        for (int i = 0; i < size; i++) {
             numerosGenerados.add(intProvider.get());
         }
         return numerosGenerados;

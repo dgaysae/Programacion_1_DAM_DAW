@@ -35,7 +35,7 @@ public class Main03Provider {
         System.out.println("Ceros: " + inicializarACero);
     }
 
-    public static List<Integer> getLista(int size, IntegerProvider intProvider) {
+    public static List<Integer> getLista(int size, ElementProvider intProvider) {
         List<Integer> numerosGenerados = new ArrayList<>();
         for(int i = 0; i < size; i++) {
             numerosGenerados.add(intProvider.get());

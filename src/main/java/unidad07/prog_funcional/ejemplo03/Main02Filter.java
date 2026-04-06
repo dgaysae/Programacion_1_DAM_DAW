@@ -1,6 +1,6 @@
-package unidad07.prog_funcional.ejemplo02;
+package unidad07.prog_funcional.ejemplo03;
 
-import unidad07.prog_funcional.ejemplo02.filter.*;
+import unidad07.prog_funcional.ejemplo03.filter.NumberFilter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,7 +28,7 @@ public class Main02Filter {
         System.out.println(numeros);
 
         // Si el objeto se usa en varios lugares, podemos usar una variable:
-        NumberFilter filtroPares = new NumberFilter() {
+        NumberFilter<Integer> filtroPares = new NumberFilter<>() {
             @Override
             public boolean validar(Integer numero) {
                 return numero % 2 == 0;
@@ -37,25 +37,25 @@ public class Main02Filter {
 
         List<Integer> numerosPares = filtrar(numeros, filtroPares);
 
-        List<Integer> numerosImpares = filtrar(numeros, new NumberFilter() {
+        List<Integer> numerosImpares = filtrar(numeros, new NumberFilter<Integer>() {
             @Override
             public boolean validar(Integer numero) {
                 return numero % 2 != 0;
             }
         });
-        List<Integer> multiplosDe3 = filtrar(numeros, new NumberFilter() {
+        List<Integer> multiplosDe3 = filtrar(numeros, new NumberFilter<Integer>() {
             @Override
             public boolean validar(Integer numero) {
                 return numero % 3 == 0;
             }
         });
-        List<Integer> multiplosDe5 = filtrar(numeros, new NumberFilter() {
+        List<Integer> multiplosDe5 = filtrar(numeros, new NumberFilter<Integer>() {
             @Override
             public boolean validar(Integer numero) {
                 return numero % 5 == 0;
             }
         });
-        List<Integer> multiplosDe7 = filtrar(numeros, new NumberFilter() {
+        List<Integer> multiplosDe7 = filtrar(numeros, new NumberFilter<Integer>() {
             @Override
             public boolean validar(Integer numero) {
                 return numero % 7 == 0;
@@ -88,9 +88,9 @@ public class Main02Filter {
      * @param filtro Criterio de filtrado. Objeto de tipo {@link unidad07.prog_funcional.ejemplo02.filter.NumberFilter}
      * @return Lista filtrada.
      */
-    public static List<Integer> filtrar(List<Integer> numeros, NumberFilter filtro) {
-        List<Integer> numerosFiltrados = new ArrayList<>();
-        for(Integer numero : numeros) {
+    public static <T> List<T> filtrar(List<T> numeros, NumberFilter<T> filtro) {
+        List<T> numerosFiltrados = new ArrayList<>();
+        for(T numero : numeros) {
             if (filtro.validar(numero)) {
                 numerosFiltrados.add(numero);
             }

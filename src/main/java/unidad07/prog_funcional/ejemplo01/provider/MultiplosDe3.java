@@ -1,6 +1,6 @@
 package unidad07.prog_funcional.ejemplo01.provider;
 
-public class MultiplosDe3 implements IntegerProvider {
+public class MultiplosDe3 implements ElementProvider {
     private static int next = 3;
 
     /**
