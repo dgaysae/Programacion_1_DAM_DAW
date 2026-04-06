@@ -7,7 +7,17 @@ import java.util.List;
  * <h1>Introducción a la programación funcional.</h1>
  * <p>
  *     Como hemos dicho muchas veces en clase, si el código de una clase no se va a utilizar en más de un sitio, es
- *     conveniente hacer una clase anónima.
+ *     conveniente hacer una clase anónima.<br/>
+ *     Ya lo vimos en Swing, cuando implementamos el comportamiento de un botón u otro control visual mediante estas
+ *     clases anónimas.
+ * </p>
+ * <p>
+ *     Las clases anónimas se usan cuando vamos a implementar un código que no se va a utilizar más que en ese bloque
+ *     de código, por lo que no es necesario (ni conveniente) hacer una clase sólo para ese fragmento de código.
+ * </p>
+ * <p>
+ *     En estos ejemplos vamos a rehacer lo que se ha implementado en el ejemplo anterior usando <strong>clases
+ *     anónimas</strong>.
  * </p>
  * <p>
  *     <strong>Importante:</strong> una buena parte de los ejemplos se han tomado o inspirado del canal de
