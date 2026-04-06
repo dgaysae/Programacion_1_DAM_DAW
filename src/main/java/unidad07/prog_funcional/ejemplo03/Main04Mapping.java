@@ -2,43 +2,67 @@ package unidad07.prog_funcional.ejemplo03;
 
 import unidad07.prog_funcional.ejemplo03.mapping.Calculo;
 import unidad07.prog_funcional.ejemplo03.mapping.CalculoUnario;
+import unidad07.prog_funcional.ejemplo03.provider.ElementProvider;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static unidad07.prog_funcional.ejemplo03.Main03Provider.getLista;
+
 /**
  * <p>
- *     Ya hemos visto cómo hacer un sólo método para una tarea (filtrar y generar). Ahora toca transformar datos.
- * </p>
- * <p>
- *     Se va a crear un método genérico al que se le pasarán una lista de números y un criterio para transformar
- *     todos los números de esa lista.
+ *     Veamos cómo definir las operaciones de transformación de los ejemplos anteriores usando genéricos.<br/>
+ *     De esta forma podemos ampliar el rango de operaciones a otros tipos de datos que hasta ahora no habíamos
+ *     contemplado (como es el caso de cuadrados2).
  * </p>
  * <p>
  *     <strong>Importante:</strong> una buena parte de los ejemplos se han tomado o inspirado del canal de
- *     <strong><a href="https://youtu.be/syvhj0PWv_0?si=5LIvvlEs8AewoC8l">Pedro Joya</a></strong>.
+ *     <strong><a href="hthttps://youtu.be/dK8erMU9t_g?si=m6oIYPxO11apUV0l">Pedro Joya</a></strong>.
  * </p>
  * @author diego
  */public class Main04Mapping {
     public static void main(String[] args) {
-//        List<Integer> naturales = Main03Provider.getLista(20, new Natural());
-//        List<Integer> naturales2 = Main03Provider.getLista(20, new Natural());
-//        List<Integer> dobles = calcular(naturales, new Doble());
-//        List<Integer> cuadrados = calcular(naturales, new Cuadrado());
-//        List<Integer> cubos = calcular(naturales, new Cubo());
-//
-//        List<Integer> cuadrados2 = calcular(naturales, new Potencia(2));
-//        List<Integer> cubos2 = calcular(naturales, new Potencia(3));
-//
-//        System.out.println("Números naturales: \n" + naturales);
-//        System.out.println("Dobles: \n" + dobles);
-//        System.out.println("Cuadrados: \n" + cuadrados);
-//        System.out.println("Cuadrados (con Potencia): \n" + cuadrados2);
-//        System.out.println("Cubos: \n" + cubos);
-//        System.out.println("Cubos (con Potencia): \n" + cubos2);
-//        System.out.println("-----------------------------------");
-//        System.out.println("Números naturales: \n" + naturales2);
-//        transformar(naturales2, new Triple());
+        List<Integer> naturales = getLista(20, new ElementProvider<>() {
+            private static Integer next = 0;
+
+            @Override
+            public Integer get() {
+                return ++next;
+            }
+        });
+        System.out.println("Números naturales: \n" + naturales);
+
+        List<Integer> cuadrados = calcular(naturales, new CalculoUnario<Integer>() {
+            @Override
+            public Integer calcular(Integer numero) {
+                return numero * numero;
+            }
+        });
+        System.out.println("Cuadrados: \n" + cuadrados);
+
+        List<Integer> cuadrados2 = calcular(naturales, new Calculo<Integer, Integer>() {
+            @Override
+            public Integer calcular(Integer numero) {
+                return numero * numero;
+            }
+        });
+        System.out.println("Cuadrados: \n" + cuadrados2);
+
+
+        List<String> cuadradosAString = calcular(naturales, new Calculo<Integer, String>() {
+            @Override
+            public String calcular(Integer numero) {
+                return "Cuadrado de " + numero + " = " + (numero * numero);
+            }
+        });
+        System.out.println(cuadradosAString);
+
+//        TODO Obtener e imprimir lista de dobles.
+//        TODO Obtener e imprimir lista de triples.
+//        TODO Obtener e imprimir lista de cubos.
+//        TODO Obtener e imprimir lista de potencias de 2.
+//        TODO Obtener e imprimir lista de potencias de 3.
+
 //        System.out.println("Números naturales transformados (triple): \n" + naturales2);
     }
 

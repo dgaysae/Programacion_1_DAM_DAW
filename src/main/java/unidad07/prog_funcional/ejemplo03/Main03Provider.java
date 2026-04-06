@@ -8,16 +8,11 @@ import java.util.Random;
 
 /**
  * <p>
- * Pero no tenemos que parar en el filtrado. ¡También podemos "personalizar" otras tareas para un método!
- * </p>
- * <p>
- * En este caso atacaremos el tema de <strong>crear</strong> esa lista de números. En {@link Main} hicimos un
- * método <strong>getLista</strong> que hardcodeaba esa lista. Ahora podemos indicar qué tipo de números queremos
- * en ella de la misma forma que hemos hecho en el caso del filtrado.
+ *     Veamos cómo definir las operaciones de obtención de datos de los ejemplos anteriores usando genéricos.<br/>
  * </p>
  * <p>
  * <strong>Importante:</strong> una buena parte de los ejemplos se han tomado o inspirado del canal de
- * <strong><a href="https://youtu.be/syvhj0PWv_0?si=5LIvvlEs8AewoC8l">Pedro Joya</a></strong>.
+ * <strong><a href="https://youtu.be/dK8erMU9t_g?si=m6oIYPxO11apUV0l">Pedro Joya</a></strong>.
  * </p>
  *
  * @author diego

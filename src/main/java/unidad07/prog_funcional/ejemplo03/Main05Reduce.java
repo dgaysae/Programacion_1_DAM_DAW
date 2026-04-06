@@ -16,7 +16,7 @@ import java.util.List;
  * @author diego
  */public class Main05Reduce {
     public static void main(String[] args) {
-        List<Integer> naturales = Main03Provider.getLista(20, new ElementProvider() {
+        List<Integer> naturales = Main03Provider.getLista(20, new ElementProvider<>() {
             private static int next = 0;
             @Override
             public Integer get() {
@@ -25,7 +25,13 @@ import java.util.List;
         });
 
         System.out.println("Naturales: \n" + naturales);
-//        System.out.println("Suma: \n" + reduce(naturales, 0, new Sumador()));
+        System.out.println("Suma: \n" + reduce(naturales, 0, new ReductorMonoTipo<Integer>() {
+            @Override
+            public Integer reduce(Integer previous, Integer value) {
+                return previous + value;
+            }
+        }));
+
 //        System.out.println("Multiplicación: \n" + reduce(naturales, 1, new Multiplicador()));
 //        System.out.println("Suma sólo de pares: \n" + reduce(naturales, 0, new SumadorDePares()));
 //        System.out.println("Suma sólo de impares: \n" + reduce(naturales, 0, new SumadorDeImpares()));

@@ -428,12 +428,20 @@ var edad = 33;
 ```
 
 ```java
+import unidad07.genericos.ejemplo02.singenericos.Persona;
+
 Persona persona = new Persona("Anselmo", 33, "12345678A");
-System.out.printf(
+System.out.
+
+printf(
     "%s tiene %d años y su DNI es %s",
     persona.getNombre(),
-    persona.getEdad(),
-    persona.getDni()
+    persona.
+
+getEdad(),
+    persona.
+
+getDni()
 );
 ```
 

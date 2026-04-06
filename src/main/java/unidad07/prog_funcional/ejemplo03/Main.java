@@ -21,7 +21,7 @@ import java.util.List;
  * </p>
  * <p>
  *     <strong>Importante:</strong> una buena parte de los ejemplos se han tomado o inspirado del canal de
- *     <strong><a href="https://youtu.be/wenIr54-UEc?si=m8YAbXvod8W5g8dM">Pedro Joya</a></strong>.
+ *     <strong><a href="https://youtu.be/dK8erMU9t_g?si=m6oIYPxO11apUV0l">Pedro Joya</a></strong>.
  * </p>
  * @author diego
  */
