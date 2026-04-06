@@ -60,7 +60,8 @@ import java.util.List;
 
     /**
      * En general, la transformación suele hacerse en programación funcional a través de métodos como
-     * .map, que actúa directamente sobre la lista objeto.
+     * .map, que actúa directamente sobre la lista objeto. Por tanto, este método sería más propio de un .map
+     * que el método calcular.
      * @param numeros
      * @param calculo
      */
