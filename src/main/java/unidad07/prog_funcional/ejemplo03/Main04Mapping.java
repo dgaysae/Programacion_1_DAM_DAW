@@ -7,7 +7,7 @@ import unidad07.prog_funcional.ejemplo03.provider.ElementProvider;
 import java.util.ArrayList;
 import java.util.List;
 
-import static unidad07.prog_funcional.ejemplo03.Main03Provider.getLista;
+import static unidad07.prog_funcional.ejemplo03.Main03Provider.provide;
 
 /**
  * <p>
@@ -22,7 +22,7 @@ import static unidad07.prog_funcional.ejemplo03.Main03Provider.getLista;
  * @author diego
  */public class Main04Mapping {
     public static void main(String[] args) {
-        List<Integer> naturales = getLista(20, new ElementProvider<>() {
+        List<Integer> naturales = provide(20, new ElementProvider<>() {
             private static Integer next = 0;
 
             @Override

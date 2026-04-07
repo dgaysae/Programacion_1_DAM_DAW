@@ -16,7 +16,7 @@ import java.util.List;
  * @author diego
  */public class Main05Reduce {
     public static void main(String[] args) {
-        List<Integer> naturales = Main03Provider.getLista(20, new ElementProvider<>() {
+        List<Integer> naturales = Main03Provider.provide(20, new ElementProvider<>() {
             private static int next = 0;
             @Override
             public Integer get() {

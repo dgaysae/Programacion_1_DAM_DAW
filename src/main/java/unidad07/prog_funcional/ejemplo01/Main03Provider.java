@@ -22,11 +22,11 @@ import java.util.List;
  */
 public class Main03Provider {
     public static void main(String[] args) {
-        List<Integer> naturales = getLista(20, new Natural());
-        List<Integer> multiplosDe3 = getLista(20, new MultiplosDe3());
-        List<Integer> aleatoriosMenoresDe100 = getLista(20, new AleatorioHasta100());
-        List<Integer> aleatoriosEntre50y100 = getLista(20, new AleatorioEntre50y100());
-        List<Integer> inicializarACero = getLista(20, new InitializeTo(0));
+        List<Integer> naturales = provide(20, new Natural());
+        List<Integer> multiplosDe3 = provide(20, new MultiplosDe3());
+        List<Integer> aleatoriosMenoresDe100 = provide(20, new AleatorioHasta100());
+        List<Integer> aleatoriosEntre50y100 = provide(20, new AleatorioEntre50y100());
+        List<Integer> inicializarACero = provide(20, new InitializeTo(0));
 
         System.out.println("Números naturales: " + naturales);
         System.out.println("Múltiplos de 3: " + multiplosDe3);
@@ -35,7 +35,7 @@ public class Main03Provider {
         System.out.println("Ceros: " + inicializarACero);
     }
 
-    public static List<Integer> getLista(int size, ElementProvider intProvider) {
+    public static List<Integer> provide(int size, ElementProvider intProvider) {
         List<Integer> numerosGenerados = new ArrayList<>();
         for(int i = 0; i < size; i++) {
             numerosGenerados.add(intProvider.get());

@@ -19,7 +19,7 @@ import java.util.Random;
  */
 public class Main03Provider {
     public static void main(String[] args) {
-        List<Integer> naturales = getLista(20, new ElementProvider<>() {
+        List<Integer> naturales = provide(20, new ElementProvider<>() {
             private static Integer next = 0;
 
             @Override
@@ -28,7 +28,7 @@ public class Main03Provider {
             }
         });
 
-        List<Integer> multiplosDe3 = getLista(20, new ElementProvider<>() {
+        List<Integer> multiplosDe3 = provide(20, new ElementProvider<>() {
             private static Integer next = 3;
 
             @Override
@@ -37,7 +37,7 @@ public class Main03Provider {
             }
         });
 
-        List<Integer> aleatoriosMenoresDe100 = getLista(20, new ElementProvider<>() {
+        List<Integer> aleatoriosMenoresDe100 = provide(20, new ElementProvider<>() {
             @Override
             public Integer get() {
                 return (new Random()).nextInt(101);
@@ -53,7 +53,7 @@ public class Main03Provider {
 //        System.out.println("Ceros: " + inicializarACero);
     }
 
-    public static <T> List<T> getLista(int size, ElementProvider<T> intProvider) {
+    public static <T> List<T> provide(int size, ElementProvider<T> intProvider) {
         List<T> numerosGenerados = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             numerosGenerados.add(intProvider.get());

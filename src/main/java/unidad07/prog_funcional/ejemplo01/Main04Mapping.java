@@ -1,7 +1,6 @@
 package unidad07.prog_funcional.ejemplo01;
 
 import unidad07.prog_funcional.ejemplo01.mapping.*;
-import unidad07.prog_funcional.ejemplo01.provider.InitializeTo;
 import unidad07.prog_funcional.ejemplo01.provider.*;
 
 import java.util.ArrayList;
@@ -22,8 +21,8 @@ import java.util.List;
  * @author diego
  */public class Main04Mapping {
     public static void main(String[] args) {
-        List<Integer> naturales = Main03Provider.getLista(20, new Natural());
-        List<Integer> naturales2 = Main03Provider.getLista(20, new Natural());
+        List<Integer> naturales = Main03Provider.provide(20, new Natural());
+        List<Integer> naturales2 = Main03Provider.provide(20, new Natural());
         List<Integer> dobles = calcular(naturales, new Doble());
         List<Integer> cuadrados = calcular(naturales, new Cuadrado());
         List<Integer> cubos = calcular(naturales, new Cubo());

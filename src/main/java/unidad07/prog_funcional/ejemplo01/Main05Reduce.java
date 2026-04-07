@@ -1,10 +1,8 @@
 package unidad07.prog_funcional.ejemplo01;
 
-import unidad07.prog_funcional.ejemplo01.mapping.*;
 import unidad07.prog_funcional.ejemplo01.provider.Natural;
 import unidad07.prog_funcional.ejemplo01.reduce.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -37,7 +35,7 @@ import java.util.List;
  * @author diego
  */public class Main05Reduce {
     public static void main(String[] args) {
-        List<Integer> naturales = Main03Provider.getLista(10, new Natural());
+        List<Integer> naturales = Main03Provider.provide(10, new Natural());
 
         System.out.println("Naturales: \n" + naturales);
         System.out.println("Suma: \n" + reduce(naturales, 0, new Sumador()));
