@@ -46,9 +46,9 @@ import java.util.List;
 
     public static Integer reduce(
             List<Integer> numeros,
-            Integer init,
+            Integer identity,
             Reductor reductor) {
-        int reduccion = init;
+        int reduccion = identity;
         for (Integer numero : numeros) {
             reduccion = reductor.reduce(reduccion, numero);
         }
