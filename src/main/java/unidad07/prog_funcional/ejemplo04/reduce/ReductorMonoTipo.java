@@ -1,6 +1,4 @@
-package unidad07.prog_funcional.ejemplo03.reduce;
-
-import unidad07.prog_funcional.ejemplo03.reduce.Reductor;
+package unidad07.prog_funcional.ejemplo04.reduce;
 
 /**
  * Esta es una especialización de {@link Reductor}, donde el tipo de dato será el mismo para los argumentos de entrada

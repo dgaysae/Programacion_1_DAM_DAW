@@ -1,13 +1,13 @@
-package unidad07.prog_funcional.ejemplo03;
+package unidad07.prog_funcional.ejemplo04;
 
-import unidad07.prog_funcional.ejemplo03.mapping.Calculo;
-import unidad07.prog_funcional.ejemplo03.mapping.CalculoUnario;
-import unidad07.prog_funcional.ejemplo03.provider.ElementProvider;
+import unidad07.prog_funcional.ejemplo04.mapping.Calculo;
+import unidad07.prog_funcional.ejemplo04.mapping.CalculoUnario;
+import unidad07.prog_funcional.ejemplo04.provider.ElementProvider;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static unidad07.prog_funcional.ejemplo03.Main03Provider.provide;
+import static unidad07.prog_funcional.ejemplo04.Main03Provider.provide;
 
 /**
  * <p>

@@ -1,6 +1,6 @@
-package unidad07.prog_funcional.ejemplo03;
+package unidad07.prog_funcional.ejemplo04;
 
-import unidad07.prog_funcional.ejemplo03.filter.NumberFilter;
+import unidad07.prog_funcional.ejemplo04.filter.NumberFilter;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package unidad07.prog_funcional.ejemplo03.provider;
+package unidad07.prog_funcional.ejemplo04.provider;
 
 /**
  * La intención de esta interfaz es diseñar clases que la implementen para proporcionar números, cada

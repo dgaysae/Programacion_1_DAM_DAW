@@ -1,4 +1,4 @@
-package unidad07.prog_funcional.ejemplo03.mapping;
+package unidad07.prog_funcional.ejemplo04.mapping;
 
 /**
  * Con los dos genéricos indicamos que podemos tener dos tipos distintos para el argumento y el retorno.

@@ -1,4 +1,4 @@
-package unidad07.prog_funcional.ejemplo03.reduce;
+package unidad07.prog_funcional.ejemplo04.reduce;
 
 /**
  * Podemos distinguir los tipos de datos de cada operador, por si el algún caso necesitamos hacer operaciones.

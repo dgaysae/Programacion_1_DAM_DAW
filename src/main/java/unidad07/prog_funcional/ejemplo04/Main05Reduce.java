@@ -1,7 +1,7 @@
-package unidad07.prog_funcional.ejemplo03;
+package unidad07.prog_funcional.ejemplo04;
 
-import unidad07.prog_funcional.ejemplo03.provider.ElementProvider;
-import unidad07.prog_funcional.ejemplo03.reduce.ReductorMonoTipo;
+import unidad07.prog_funcional.ejemplo04.provider.ElementProvider;
+import unidad07.prog_funcional.ejemplo04.reduce.ReductorMonoTipo;
 
 import java.util.List;
 

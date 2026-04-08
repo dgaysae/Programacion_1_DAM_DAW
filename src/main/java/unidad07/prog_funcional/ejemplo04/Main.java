@@ -4,33 +4,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <h1>Method Cadena - encadenando un método tras otro</h1>
+ * <h1>Introducción a la programación funcional.</h1>
  * <p>
- *     Retomando los ejemplos anteriores, si queremos hacer un flujo de ejecución completo donde:
- *     <ol>
- *         <li>Genere una lista de números.</li>
- *         <li>Calcule el cuadrado de todos ellos.</li>
- *         <li>Filtro para quedarme sólo con los pares de esos cuadrados.</li>
- *         <li>Haga un reduce para obtener la suma de los números del punto anterior.</li>
- *     </ol>
- *     ...tendriamos que hacer algo así: reduce(filtrar(calcular(getValues(...))));
+ *     Como hemos dicho muchas veces en clase, si el código de una clase no se va a utilizar en más de un sitio, es
+ *     conveniente hacer una clase anónima.<br/>
+ *     Ya lo vimos en Swing, cuando implementamos el comportamiento de un botón u otro control visual mediante estas
+ *     clases anónimas.
  * </p>
  * <p>
- *     Este anidamiento de unos métodos en otros puede resultar confuso en su lectura y mantenimiento.
- *     Lo más intuitivo sería algo así:<br/>
- *     getValues(...).calcular(...).filtrar(...).reduce(...);<br/>
+ *     Las clases anónimas se usan cuando vamos a implementar un código que no se va a utilizar más que en ese bloque
+ *     de código, por lo que no es necesario (ni conveniente) hacer una clase sólo para ese fragmento de código.
  * </p>
  * <p>
- *     Esto nos permite leer el código de forma natural, como si de un libro se tratase.<br/>
- *     A esto se le conoce como <strong>method chaining</strong> o <strong>encadenamiento de métodos</strong> y al
- *     aplicarlo para conseguir leer casi como lenguaje natural se conoce como <strong>fluent interface</strong> (interfaz fluida).
- * </p>
- * <p>
- *     Vamos a hacer eso, aglutinando todas las funcionalidades anteriores en una sola clase.
+ *     En estos ejemplos vamos a rehacer lo que se ha implementado en el ejemplo anterior usando <strong>clases
+ *     anónimas</strong>.
  * </p>
  * <p>
  *     <strong>Importante:</strong> una buena parte de los ejemplos se han tomado o inspirado del canal de
- *     <strong><a href="https://youtu.be/dK8erMU9t_g?si=a5o_fSwc9EIBU1t7">Pedro Joya</a></strong>.
+ *     <strong><a href="https://youtu.be/dK8erMU9t_g?si=m6oIYPxO11apUV0l">Pedro Joya</a></strong>.
  * </p>
  * @author diego
  */
