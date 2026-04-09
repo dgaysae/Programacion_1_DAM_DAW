@@ -53,6 +53,22 @@ public class Main {
         System.out.println();
         System.out.println();
         System.out.println("------------------- EJEMPLO 2 -------------------");
+        List<String> frutas = List.of("pera", "manzana", "FRESA", "PLÁTANO", "POMELO", "kiwi", "mango", "PERA");
+        System.out.println("Frutas: " + frutas);
+
+        System.out.println("--- Frutas en mayúsculas ---");
+        frutas.stream()
+                .filter(s -> s.matches("[A-ZÁÉÍÓÚ]+"))
+                .forEach(System.out::println);
+
+        System.out.println("--- Frutas en minúsculas ---");
+        frutas.stream()
+                .filter(s -> s.matches("[a-z]+"))
+                .forEach(System.out::println);
+
+        System.out.println();
+        System.out.println();
+        System.out.println("------------------- EJEMPLO 3 -------------------");
         List<Integer> numeros = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18);
 
         Integer suma = numeros.stream()

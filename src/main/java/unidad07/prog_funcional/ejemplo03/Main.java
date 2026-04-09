@@ -5,6 +5,13 @@ import unidad07.prog_funcional.ejemplo02.filter.NumberFilter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <p>
+ *     En estos ejemplos rehacemos las implementaciones de los ejemplos anteriores usando expresiones lambda.<br>
+ *     Como se puede comprobar, una expresión lambda "vale más que mil palabras".
+ * </p>
+ *
+ */
 public class Main {
     public static void main(String[] args) {
         List<Integer> numeros = getLista();
