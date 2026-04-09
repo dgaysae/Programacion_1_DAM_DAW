@@ -2,6 +2,15 @@ package unidad07.prog_funcional.ejemplo05;
 
 import java.time.LocalDate;
 
+/**
+ * <p>
+ *     Tenemos esta clase que a la hora de devolver datos de la dirección dispone de varios getters: getLocalidad,
+ *     getProvincia, getCodigoPostal y getDireccion.
+ * </p>
+ * <p>
+ *     El problema es que todos ellos repiten mucho código. ¿Cómo lo solucionarías...?
+ * </p>
+ */
 public class Persona {
     private String nombre;
     private String dni;
