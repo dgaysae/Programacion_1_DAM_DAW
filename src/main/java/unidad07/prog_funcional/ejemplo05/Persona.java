@@ -118,4 +118,16 @@ public class Persona {
                 ? direccionPostal.direccion
                 : "";
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", dni='" + dni + '\'' +
+                ", email='" + email + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                ", casada=" + casada +
+                ", direccionPostal=" + direccionPostal +
+                '}';
+    }
 }
