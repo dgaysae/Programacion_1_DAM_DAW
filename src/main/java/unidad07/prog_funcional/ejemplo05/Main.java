@@ -10,6 +10,8 @@ import java.util.stream.Collectors;
  * que otros lenguajes de programación. Y uno de esos ajustes son los "stream" que se pueden invocar desde cualquier
  * colección de datos.
  * </p>
+ *
+ * @author dgs
  */
 public class Main {
     public static void main(String[] args) {
