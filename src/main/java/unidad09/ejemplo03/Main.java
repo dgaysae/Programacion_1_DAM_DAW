@@ -4,15 +4,12 @@ import java.sql.*;
 
 /**
  * <p>
- *     Ya hemos establecido la conexión con la bbdd! <br/>
- *     El siguiente paso es que, a través de dicha conexión, creemos las sentencias que queremos ejecutar.
+ *     Dos de tres: conexión con la bbdd, ejecución de sentencia (de escritura) y ahora toca ¡consultar datos! <br/>
+ *     Mediante el Statement vamos a lanzar una SELECT que devolverá un conjunto (Set) de registros o resultados (Result).
+ *     En otras palabras, un objeto <strong>ResultSet</strong> que aglutina la lista de registros obtenidos en la consulta.
  * </p>
  * <p>
- *     Esto lo haremos con Statement. Esta sentencia, grosso modo, puede hacer dos operaciones:
- *     <ul>
- *         <li>Lectura: consulta (SELECT) elementos de la bbdd usando el método executeQuery.<br/> Para ver estos ejemplos ve a las clases del paquete ejemplo02.</li>
- *         <li>Escritura: que puede ser un alta (INSERT), baja (DELETE) o modificación (UPDATE) en la bbdd usando el método executeUpdate.</li>
- *     </ul>
+ *     Este ResultSet se crea a partir del Statement.
  * </p>
  *
  * @author dgs
