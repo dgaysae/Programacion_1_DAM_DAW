@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * Esta versión legacy code nos permite ver cómo cerrar todos estos objetos AutoCloseable.
+ * Esta versión <strong>legacy</strong> nos permite ver cómo cerrar todos estos objetos AutoCloseable.
  *
  * @author dgs
  */
