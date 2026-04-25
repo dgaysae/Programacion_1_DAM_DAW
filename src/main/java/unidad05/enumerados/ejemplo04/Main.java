@@ -16,8 +16,10 @@ public class Main {
         System.out.println("Calcular superficies de figuras geométricas:");
 
         /*
-        De esta forma, tendríamos que crear un método para cada constante (una para CIRCUNFERENCIA,
-        otra para CUADRADO, etc.)
+        El siguiente cálculo no tiene sentido. Nuestro enum no puede permitir que se ejecute el método
+        calcularSuperficieRectangulo desde una CIRCUNFERENCIA.
+        ¡Recordemos que los métodos de un enum los puede ejecutar cualquiera de las constantes contenidas
+        en él!
         */
         System.out.println(
                 FiguraGeometrica.CIRCUNFERENCIA.calcularSuperficieRectangulo(base, altura)
