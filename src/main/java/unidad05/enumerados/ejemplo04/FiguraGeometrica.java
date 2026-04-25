@@ -1,5 +1,10 @@
 package unidad05.enumerados.ejemplo04;
 
+/**
+ * <p>Este enum gestiona internamente la validación que nos permitirá saber los parámetros que admite el método
+ * calcularArea para cada figura geométrica.</p>
+ * @author diego
+ */
 public enum FiguraGeometrica {
     CIRCUNFERENCIA(1) {
         @Override
