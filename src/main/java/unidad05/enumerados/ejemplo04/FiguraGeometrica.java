@@ -59,8 +59,9 @@ public enum FiguraGeometrica {
     // public abstract double calcularArea(double[] dimensiones);
 
     /**
+     * **************** ERROR ****************
      * Este método no tiene sentido, ya que podría aplicarlo a cualquier
-     * figura geométrica del enum (círculo, rectángulo, etc.).
+     * figura geométrica del enum (CIRCUNFERENCIA, RECTANGULO, etc.).
      * Además, no tiene sentido crear una función por cada constante.
      * @param lado
      * @return
@@ -72,6 +73,7 @@ public enum FiguraGeometrica {
     }
 
     /**
+     * **************** ERROR ****************
      * Este método no tiene sentido, ya que podría aplicarlo a cualquier
      * figura geométrica del enum (círculo, rectángulo, etc.).
      * Además, no tiene sentido crear una función por cada constante.
